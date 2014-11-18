@@ -20,7 +20,7 @@ global = {
 }
 scale = \relative c' { c, d e f g a b }
 one =  _\markup {\lower#5 {\smaller 1} }
-up = _\markup {\lower#5 {\smaller "up!"}}
+up = _\markup {\lower#5 {\smaller "up"}}
 
 #(define-markup-command (exercise-num layout props number) (markup?)
    "displays excercise number above staff"
@@ -84,7 +84,7 @@ right = \relative c'' {
   \repeat volta 2 { e16^\markup \exercise-num 97 ^3\one ( d c d ) e ( f g f )  } e-.->\up r r8 r4  \bar "||" \break
 
   \repeat volta 2 { d16^\markup \exercise-num 98 ^2\one ( c d e ) f ( g f e )  } d-.->\up r r8 r4
-  \repeat volta 2 { c16^\markup \exercise-num 99 ^1\one d^2 c^3 e^4  } c-.->\up r r8
+  \repeat volta 2 { c16^\markup \exercise-num 99 ^1\one d^2 c^1 e^3  } c-.->\up r r8
   \repeat volta 2 { d16^\markup \exercise-num 100 ^2\one e^3 d^2 f^4  } d-.->\up r r8
   \repeat volta 2 { e16^\markup \exercise-num 101 ^3\one f^2 e^3 g^1  } e-.->\up r r8 \bar "||" \break
 
@@ -109,77 +109,77 @@ left = \relative c' {
   \global
   % Music follows here.
   \clef bass
-  \repeat volta 2 { c,16_5 d_4 c d } c-.-> r r8
-  \repeat volta 2 { d16_4 e_3 d e  } d-.-> r r8
-  \repeat volta 2 { e16_3 f_2 e f  } e-.-> r r8
-  \repeat volta 2 { f16_2 g_1 f g  } f-.-> r r8 
+  \repeat volta 2 { c,16_1 d_2 c d } c-.-> r r8
+  \repeat volta 2 { d16_2 e_3 d e  } d-.-> r r8
+  \repeat volta 2 { e16_3 f_4 e f  } e-.-> r r8
+  \repeat volta 2 { f16_4 g_5 f g  } f-.-> r r8 
 
-  \repeat volta 2 { d16_4 c_5 d c  } d-.-> r r8
+  \repeat volta 2 { d16_2 c_1 d c  } d-.-> r r8
   \repeat volta 2 { e16_3 d e d  } e-.-> r r8
-  \repeat volta 2 { f16_2 e f e  } f-.-> r r8
-  \repeat volta 2 { g16_1 f g f  } g-.-> r r8 
+  \repeat volta 2 { f16_4 e f e  } f-.-> r r8
+  \repeat volta 2 { g16_5 f g f  } g-.-> r r8 
 
-  \repeat volta 2 { c,16_5 d e d  } c-.-> r r8
-  \repeat volta 2 { d16_4 e f e  } d-.-> r r8
+  \repeat volta 2 { c,16_1 d e d  } c-.-> r r8
+  \repeat volta 2 { d16_2 e f e  } d-.-> r r8
   \repeat volta 2 { e16_3 f g f  } e-.-> r r8
   \repeat volta 2 { e16_3 d c d  } e-.-> r r8 
 
-  \repeat volta 2 { f16_2 e d e  } f-.-> r r8
-  \repeat volta 2 { g16_1 f e f  } g-.-> r r8
-  \repeat volta 2 { \times 2/3 { d8_4 e c }  } d16-.-> r r8
+  \repeat volta 2 { f16_4 e d e  } f-.-> r r8
+  \repeat volta 2 { g16_5 f e f  } g-.-> r r8
+  \repeat volta 2 { \times 2/3 { d8_2 e c }  } d16-.-> r r8
   \repeat volta 2 { \times 2/3 { e8_3 f d }  } e16-.-> r r8 
 
-  \repeat volta 2 { \times 2/3 { f8_2 g e }  } f16-.-> r r8
-  \repeat volta 2 { \times 2/3 { d8_4 c e }  } d16-.-> r r8
+  \repeat volta 2 { \times 2/3 { f8_4 g e }  } f16-.-> r r8
+  \repeat volta 2 { \times 2/3 { d8_2 c e }  } d16-.-> r r8
   \repeat volta 2 { \times 2/3 { e8_3 d f }  } e16-.-> r r8
-  \repeat volta 2 { \times 2/3 { f8_2 e g }  } f16-.-> r r8
+  \repeat volta 2 { \times 2/3 { f8_4 e g }  } f16-.-> r r8
 
-  \repeat volta 2 { d16_4 c d e  } d-.-> r r8
+  \repeat volta 2 { d16_2 c d e  } d-.-> r r8
   \repeat volta 2 { e16_3 d e f  } e-.-> r r8
-  \repeat volta 2 { f16_2 e f g  } f-.-> r r8
-  \repeat volta 2 { d16_4 e d c  } d-.-> r r8 \bar "||"
+  \repeat volta 2 { f16_4 e f g  } f-.-> r r8
+  \repeat volta 2 { d16_2 e d c  } d-.-> r r8 \bar "||"
 
   \repeat volta 2 { e16_3 f e d  } e-.-> r r8
-  \repeat volta 2 { f16_2 g f e  } f-.-> r r8
-  \repeat volta 2 { \times 4/6 { c16_5 d e f e d }  } c16-.-> r r8
-  \repeat volta 2 { \times 4/6 { d16_4 e f g f e }  } d16-.-> r r8 
+  \repeat volta 2 { f16_4 g f e  } f-.-> r r8
+  \repeat volta 2 { \times 4/6 { c16_1 d e f e d }  } c16-.-> r r8
+  \repeat volta 2 { \times 4/6 { d16_2 e f g f e }  } d16-.-> r r8 
 
   \repeat volta 2 { \times 4/6 { e16_3 f g f e d }  } e16-.-> r r8
-  \repeat volta 2 { \times 4/6 { f16_2 g f e d e }  } f16-.-> r r8
-  \repeat volta 2 { \times 4/6 { g16_1 f e d e f }  } g16-.-> r r8
+  \repeat volta 2 { \times 4/6 { f16_4 g f e d e }  } f16-.-> r r8
+  \repeat volta 2 { \times 4/6 { g16_5 f e d e f }  } g16-.-> r r8
 
-  \repeat volta 2 { \times 4/6 { d16_4 c d e f e }  } d16-.-> r r8 
+  \repeat volta 2 { \times 4/6 { d16_2 c d e f e }  } d16-.-> r r8 
   \repeat volta 2 { \times 4/6 { e16_3 d e f g f }  } e16-.-> r r8
-  \repeat volta 2 { \times 4/6 { f16_2 e d c d e }  } f16-.-> r r8
+  \repeat volta 2 { \times 4/6 { f16_4 e d c d e }  } f16-.-> r r8
 
-  \repeat volta 2 { c16_5 ( d_4 e f ) g ( f e d )  } c-.-> r r8 r4 
-  \repeat volta 2 { d16_4 ( e_3 f g ) f ( e d c )  } d-.-> r r8 r4
+  \repeat volta 2 { c16_1 ( d_2 e f ) g ( f e d )  } c-.-> r r8 r4 
+  \repeat volta 2 { d16_2 ( e_3 f g ) f ( e d c )  } d-.-> r r8 r4
   \repeat volta 2 { e16_3 ( f g f ) e ( d c d )  } e-.-> r r8 r4
 
-  \repeat volta 2 { f16_2 ( g f e ) d ( c d e )  } f-.-> r r8 r4
+  \repeat volta 2 { f16_4 ( g f e ) d ( c d e )  } f-.-> r r8 r4
   \repeat volta 2 { g16_1 ( f e d ) c ( d e f )  } g-.-> r r8 r4
-  \repeat volta 2 { f16_2 ( e d c ) d ( e f g )  } f-.-> r r8 r4
+  \repeat volta 2 { f16_4 ( e d c ) d ( e f g )  } f-.-> r r8 r4
 
   \repeat volta 2 { e16_3 ( d c d ) e ( f g f )  } e-.-> r r8 r4
-  \repeat volta 2 { d16_4 ( c d e ) f ( g f e )  } d-.-> r r8 r4
-  \repeat volta 2 { c16_5 d_4 c_3 e_2  } c-.-> r r8
+  \repeat volta 2 { d16_2 ( c d e ) f ( g f e )  } d-.-> r r8 r4
+  \repeat volta 2 { c16_1 d_2 c_1 e_3  } c-.-> r r8
 
-  \repeat volta 2 { d16_4 e_3 d_4 f_2  } d-.-> r r8
+  \repeat volta 2 { d16_2 e_3 d_2 f_4  } d-.-> r r8
   \repeat volta 2 { e16_3 f_4 e_3 g_5  } e-.-> r r8
-  \repeat volta 2 { d16_4 c_5 e_3 c_5 f_2 c_5 g'_1 c,_5 f_2 c_5 e_3 c_5  } d-.-> r r8 r2
+  \repeat volta 2 { d16_2 c_1 e_3 c_1 f_4 c_1 g'_5 c,_1 f_4 c_1 e_3 c_1  } d-.-> r r8 r2
 
-  \repeat volta 2 { g16_1 f g e  } g-.-> r r8
-  \repeat volta 2 { f16_2 e f d  } f-.-> r r8
+  \repeat volta 2 { g16_5 f g e  } g-.-> r r8
+  \repeat volta 2 { f16_4 e f d  } f-.-> r r8
   \repeat volta 2 { e16_3 d e c  } e-.-> r r8
 
-  \repeat volta 2 { f16_2 g_1 e_3 g_1 d_4 g_1 c,_5 g'_1 d_4 g_1 e_3 g_1  } f-.-> r r8 r2
-  \repeat volta 2 { c16_5 e_3 d_4 f_2  } c-.-> r r8
-  \repeat volta 2 { d16_4 f_2 e g  } d-.-> r r8
+  \repeat volta 2 { f16_4 g_5 e_3 g_5 d_2 g_5 c,_1 g'_5 d_2 g_5 e_3 g_5  } f-.-> r r8 r2
+  \repeat volta 2 { c16_1 e_3 d_2 f_4  } c-.-> r r8
+  \repeat volta 2 { d16_2 f_4 e g  } d-.-> r r8
 
-  \repeat volta 2 { \times 4/6 { c16_5 e_3 d f e g }  } c,-.-> r r8
-  \repeat volta 2 { g'16_1 e_3 f_2 d_4  } g-.-> r r8
-  \repeat volta 2 { f16_2 d_4 e c  } f-.-> r r8
-  \repeat volta 2 { \times 4/6 { g16_1 e_3 f d e c }  } g'-.-> r r8
+  \repeat volta 2 { \times 4/6 { c16_1 e_3 d f e g }  } c,-.-> r r8
+  \repeat volta 2 { g'16_5 e_3 f_4 d_2  } g-.-> r r8
+  \repeat volta 2 { f16_4 d_2 e c  } f-.-> r r8
+  \repeat volta 2 { \times 4/6 { g16_5 e_3 f d e c }  } g'-.-> r r8
 
 
 }
